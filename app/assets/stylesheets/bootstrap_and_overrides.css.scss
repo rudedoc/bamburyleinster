@@ -246,8 +246,7 @@ input.subscribe-email.error + .subscribe-submit-container {
 
 @media (max-width: 979px) {
     html {
-        background: #000000 url("fullscreen_bg.jpg") 100% 100% no-repeat;
-
+        background: #000000 url(image_path("fullscreen_bg.jpg") 100% 100% no-repeat;
         -webkit-background-size: cover;
         -o-background-size: cover;
         background-size: cover;
