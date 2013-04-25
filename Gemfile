@@ -4,8 +4,8 @@ ruby "2.0.0"
 gem 'rails', '4.0.0.beta1'
 gem 'thin'
 
-gem 'mysql2'
-# gem 'pg'
+# gem 'mysql2'
+gem 'pg'
 
 # Gems used only for assets and not required
 # in production environments by default.
