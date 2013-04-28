@@ -6,15 +6,42 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </a>
-      <a class="brand" href="<%=root_path%>"> <%= image_tag 'shadow/bambury_leinster_logo.png',  :size => "130x26" %> </a>
+      <a class="brand" href="<%= root_path %>"> <%= image_tag 'shadow/bambury_leinster_logo.png', :size => "130x26" %> </a>
+
       <div class="container-fluid nav-collapse">
         <ul class="nav">
-	      <li><%= link_to "Mobile Betting", "http://iphone.betpack.com"  %></li>   
-          <li><%= link_to "Locations", "/shops"  %></li>
-          <li><%= link_to "Betting Rules", "/betting_rules"  %></li>
-          <li><%= link_to "Feedback", "/path3"  %></li>
+          <li><%= link_to "Bet Online BetPack", "http://www.betpack.com/landingpage" %></li>
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+              Locations
+              <b class="caret"></b>
+            </a>
+            <ul class="locations dropdown-menu">
+              <li class="county">Kildare</li>
+              <li> <%= link_to "Main St, Sallins", "#" %> </li>
+              <li> <%= link_to "Main St, Clane", "#" %> </li>
+              <li> <%= link_to "Cornerhouse, Clane", "#" %> </li>
+              <li class="divider"></li>
+              <li class="county">Meath</li>
+              <li> <%= link_to "Kellys, Ashbourne", "#" %> </li>
+              <li> <%= link_to "Stagshead, Ashbourne", "#" %> </li>
+              <li> <%= link_to "Main St, Dunshaughlin", "#" %> </li>
+              <li class="divider"></li>
+              <li class="county">Dublin</li>
+              <li> <%= link_to "Main St, Rush", "#" %> </li>
+              <li> <%= link_to "Lusk, Village", "#" %> </li>
+              <li> <%= link_to "Artane, Butterly Business Park", "#" %> </li>
+              <li> <%= link_to "Boroimhe, Swords", "#" %> </li>
+              <li> <%= link_to "Rathborne, Ashtown", "#" %> </li>
+              <li> <%= link_to "Main St, Blanchardstown", "#" %> </li>
+              <li> <%= link_to "Griffeen, Lucan", "#" %> </li>
+            </ul>
+          </li>
+          <li><%= link_to "Betting Rules", "/betting_rules" %></li>
+          <li><%= link_to "Feedback", "/path3" %></li>
         </ul>
-      </div><!--/.nav-collapse -->
+      </div>
+      <!--/.nav-collapse -->
     </div>
   </div>
 </div>
