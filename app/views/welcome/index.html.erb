@@ -9,24 +9,18 @@
       Submit your email to subscribe for news.
     </p>
 
-    <%= form_tag "/email", id: "subscribe-form", class: "subscribe-form form-inline" do %>
-
-        <input id="subscribe-email" class="subscribe-email" type="email" placeholder="Email" name="email">
-
+    <%= form_tag "/sign_ups", :id => "subscribe-form", :class => "subscribe-form form-inline" do %>
+        <input id="email" class="subscribe-email" type="email" placeholder="Email" name="sign_up[email]">
         <div class="subscribe-submit-container">
-          <button id="subscribe-submit" class="subscribe-submit btn btn-large">SUBSCRIBE</button>
+          <button id="subscribe-submit" class="subscribe-submit btn btn-large" name="commit" type="submit">SUBSCRIBE</button>
         </div>
-
     <% end %>
-
-
-
     <!--<form id="subscribe-form" class="subscribe-form form-inline" novalidate="">-->
-      <!--<input id="subscribe-email" class="subscribe-email" type="email" placeholder="Email" name="email">-->
+    <!--<input id="subscribe-email" class="subscribe-email" type="email" placeholder="Email" name="email">-->
 
-      <!--<div class="subscribe-submit-container">-->
-        <!--<button id="subscribe-submit" class="subscribe-submit btn btn-large">SUBSCRIBE</button>-->
-      <!--</div>-->
+    <!--<div class="subscribe-submit-container">-->
+    <!--<button id="subscribe-submit" class="subscribe-submit btn btn-large">SUBSCRIBE</button>-->
+    <!--</div>-->
     <!--</form>-->
   </div>
 </div>
@@ -56,9 +50,8 @@
             js.src = p + "://platform.twitter.com/widgets.js";
             fjs.parentNode.insertBefore(js, fjs);
         }
-    }(document, "script", "twitter-wjs");</script>
-
-
+    }(document, "script", "twitter-wjs");
+    </script>
   </div>
   <div class="span3">
     <h3>Facebook</h3>
@@ -73,7 +66,5 @@
         js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
         fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));</script>
-
   </div>
-
 </div>

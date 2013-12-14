@@ -1,25 +1,28 @@
 source 'https://rubygems.org'
-ruby "2.0.0"
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.0.beta1'
 gem 'thin'
 
-gem 'mysql2'
-# gem 'pg'
+gem 'pg'
+
+
+group :development do
+  gem 'quiet_assets'
+end
 
 # Gems used only for assets and not required
 # in production environments by default.
 # group :assets do
-  gem 'sass-rails',   '~> 4.0.0.beta1'
-  gem 'coffee-rails', '~> 4.0.0.beta1'
+gem 'sass-rails', '~> 4.0.0.beta1'
+gem 'coffee-rails', '~> 4.0.0.beta1'
 
-  # See https://github.com/sstephenson/execjs#readme for more supported runtimes
-  # gem 'therubyracer', platforms: :ruby
-  gem "therubyracer"
-  gem "less-rails" #Sprockets (what Rails 3.1 uses for its asset pipeline) supports LESS  
-  gem 'twitter-bootstrap-rails', :git => 'git://github.com/seyhunak/twitter-bootstrap-rails.git'
+# See https://github.com/sstephenson/execjs#readme for more supported runtimes
+# gem 'therubyracer', platforms: :ruby
+gem "therubyracer"
+gem "less-rails" #Sprockets (what Rails 3.1 uses for its asset pipeline) supports LESS
+gem 'twitter-bootstrap-rails', :git => 'git://github.com/seyhunak/twitter-bootstrap-rails.git'
 
-  gem 'uglifier', '>= 1.0.3'
+gem 'uglifier', '>= 1.0.3'
 # end
 
 gem 'jquery-rails'

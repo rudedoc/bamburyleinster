@@ -1,4 +1,6 @@
 BamburyLeinster::Application.routes.draw do
+  resources :sign_ups
+
   get "shops/index"
   post "email" => 'welcome#email'
 
