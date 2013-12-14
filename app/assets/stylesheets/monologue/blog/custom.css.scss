@@ -1,0 +1,315 @@
+/*
+  =require twitter-bootstrap-static/bootstrap
+  Use Font Awesome icons (default)
+  To use Glyphicons sprites instead of Font Awesome, replace with "require twitter-bootstrap-static/sprites"
+  =require twitter-bootstrap-static/fontawesome
+ */
+
+html {
+  background-attachment: scroll, scroll;
+  background-clip: border-box, border-box;
+  background-color: #000000;
+  background-image: url(image_path("hand-with-iphone-bp.png")), url(image_path("fullscreen_bg.jpg"));
+  background-origin: padding-box, padding-box;
+  background-position: 100% 100%, 100% 100%;
+  background-repeat: no-repeat, no-repeat;
+  background-size: cover;
+  min-height: 100%;
+}
+
+.post-header h1 {
+  font: 36px/1.4 'PT Sans', sans-serif;
+}
+
+body {
+  padding-left: 0px;
+  padding-right: 0px;
+  background: none repeat scroll 0 0 transparent;
+  color: #FFFFFF;
+  font: 20px/1.4 'PT Sans', sans-serif;
+  min-height: 100%;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 1), 1px 1px 2px rgba(0, 0, 0, 1);
+}
+
+.navbar .brand {
+  padding-top: 4px;
+}
+
+ul .locations {
+  text-shadow: none;
+
+}
+
+ul .county {
+  font-style: italic;
+  color: #a9a9a9;
+  padding: 3px 20px;
+}
+
+.container {
+  max-width: 1170px;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.site-heading {
+  font-size: 64px;
+  font-weight: bold;
+  line-height: 64px;
+  margin-bottom: 30px;
+  margin-top: 15px;
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+/*
+    Text elements
+=================================================================*/
+
+.description {
+  margin-bottom: 40px;
+}
+
+/*
+    Subscription form
+=================================================================*/
+
+.subscribe-form {
+  display: inline-block;
+  margin: 0 0 20px 0;
+
+  position: relative;
+}
+
+input.subscribe-email,
+.subscribe-submit {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+
+  vertical-align: top;
+
+  font: inherit;
+
+  -webkit-transition: none;
+  -moz-transition: none;
+  -ms-transition: none;
+  -o-transition: none;
+  transition: none;
+
+  -webkit-appearance: none;
+}
+
+input.subscribe-email {
+  width: 300px;
+  height: 54px;
+  padding: 13px 5px 11px 20px;
+
+  float: left;
+
+  font-size: 18px;
+  line-height: 28px;
+  color: #363636;
+
+  border: 1px solid #ccc;
+  border-right-width: 0;
+
+  -webkit-border-radius: 27px 0 0 27px;
+  border-radius: 27px 0 0 27px;
+
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+input.subscribe-email:focus {
+  padding-left: 19px;
+  padding-right: 19px;
+
+  color: #363636;
+
+  border: 2px solid #fdb813;
+  border-right-width: 0;
+
+  -webkit-box-shadow: none;
+  box-shadow: none;
+
+  outline: none;
+}
+
+input.subscribe-email:focus:invalid {
+  padding-left: 19px;
+  padding-right: 19px;
+
+  color: #363636;
+
+  border: 2px solid #fdb813;
+  border-right-width: 0;
+
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+input.subscribe-email:focus + .subscribe-submit-container {
+  padding: 3px;
+  padding-left: 0;
+
+  border: 2px solid #fdb813;
+  border-left-width: 0;
+}
+
+input.subscribe-email:focus:invalid + .subscribe-submit-container {
+  padding: 3px;
+  padding-left: 0;
+
+  border: 2px solid #fdb813;
+  border-left-width: 0;
+}
+
+input.subscribe-email.error,
+input.subscribe-email.error + .subscribe-submit-container {
+  border-color: #ED4116;
+}
+
+.subscribe-submit-container {
+  display: inline-block;
+  height: 54px;
+  padding: 4px;
+  padding-left: 0;
+
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+
+  float: right;
+
+  background: #fff;
+
+  border: 1px solid #ccc;
+  border-left-width: 0;
+
+  -webkit-border-top-right-radius: 27px;
+  border-top-right-radius: 27px;
+  -webkit-border-bottom-right-radius: 27px;
+  border-bottom-right-radius: 27px;
+}
+
+.subscribe-submit {
+  height: 44px;
+  padding: 0 20px;
+
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  letter-spacing: 1px;
+  text-shadow: inherit;
+
+  background-color: #fdb813;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffe944), to(#fdb813));
+  background-image: -webkit-linear-gradient(#ffe944, #fdb813);
+  background-image: -moz-linear-gradient(#ffe944, #fdb813);
+  background-image: -ms-linear-gradient(#ffe944, #fdb813);
+  background-image: -o-linear-gradient(#ffe944, #fdb813);
+  background-image: linear-gradient(#ffe944, #fdb813);
+
+  -webkit-border-radius: 22px;
+  border-radius: 22px;
+}
+
+.subscribe-submit:hover,
+.subscribe-submit:focus {
+  color: #fff;
+  background-color: #fdb813;
+  outline: none;
+}
+
+.subscribe-submit:active {
+  color: #fff;
+  background-color: #C56105;
+}
+
+.subscribe-tooltip {
+  width: 100%;
+  padding-top: 5px;
+
+  position: absolute;
+  top: 100%;
+
+  text-align: center;
+}
+
+.subscribe-tooltip.error {
+  color: #F9D820;
+}
+
+.subscribe-tooltip.success {
+  color: #A3EE15;
+}
+
+/*
+    Responsiveness
+=================================================================*/
+
+@media (max-width: 979px) {
+  html {
+    background: #000000 url(image_path("fullscreen_bg.jpg")) 100% 100% no-repeat;
+
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+}
+
+@media (max-width: 767px) {
+  .site-heading {
+    margin-top: 25px;
+  }
+
+  input.subscribe-email {
+    width: 250px;
+  }
+}
+
+@media (max-width: 480px) {
+  .subscribe-form {
+    display: block;
+  }
+
+  input.subscribe-email,
+  .subscribe-submit {
+    width: 100%;
+  }
+
+  input.subscribe-email {
+    float: none;
+
+    -webkit-border-radius: 27px;
+    border-radius: 27px;
+  }
+
+  .subscribe-submit-container,
+  input.subscribe-email:focus + .subscribe-submit-container {
+    width: 100%;
+    padding: 0;
+    margin-top: 15px;
+
+    float: none;
+    position: static;
+
+    background: transparent;
+    border: 0;
+  }
+
+  input.subscribe-email:focus:invalid + .subscribe-submit-container {
+    padding: 0;
+    border: 0;
+  }
+
+  .countdown-item {
+    width: 50%;
+    margin-right: 0;
+
+    text-align: center;
+  }
+}
