@@ -22,6 +22,7 @@
     <file path="/monologuerewrite.html.erb" changelist="48df8668-a500-46e8-9487-2e7aa8a7954d" time="1387057208866" ignored="false" />
     <file path="/_nav_bar.html.erb" changelist="48df8668-a500-46e8-9487-2e7aa8a7954d" time="1387059391999" ignored="false" />
     <file path="/development.rb" changelist="48df8668-a500-46e8-9487-2e7aa8a7954d" time="1387118492801" ignored="false" />
+    <file path="/production.rb" changelist="48df8668-a500-46e8-9487-2e7aa8a7954d" time="1387118743395" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,10 +60,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="development.rb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/config/environments/development.rb">
+      <file leaf-file-name="production.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="33" selection-start="1048" selection-end="1048" vertical-scroll-proportion="0.71672356">
+            <state line="29" column="33" selection-start="1282" selection-end="1282" vertical-scroll-proportion="0.63993174">
               <folding />
             </state>
           </provider>
@@ -84,7 +85,6 @@
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/config/application.rb" />
         <option value="$PROJECT_DIR$/config/environments/test.rb" />
-        <option value="$PROJECT_DIR$/config/environments/production.rb" />
         <option value="$PROJECT_DIR$/config/initializers/session_store.rb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/monologue/blog/custom.css.scss" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
@@ -94,6 +94,7 @@
         <option value="$PROJECT_DIR$/app/views/layouts/monologue/application.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/application.js" />
         <option value="$PROJECT_DIR$/config/environments/development.rb" />
+        <option value="$PROJECT_DIR$/config/environments/production.rb" />
       </list>
     </option>
   </component>
@@ -731,11 +732,6 @@
         <state line="1" column="0" selection-start="42" selection-end="42" vertical-scroll-proportion="0.022354694" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="0" selection-start="42" selection-end="42" vertical-scroll-proportion="0.022354694" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/application.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="18" column="21" selection-start="721" selection-end="721" vertical-scroll-proportion="0.432" />
@@ -803,6 +799,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/config/environments/development.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="2" selection-start="1017" selection-end="1017" vertical-scroll-proportion="0.71672356">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="11" column="21" selection-start="575" selection-end="575" vertical-scroll-proportion="0.0">
@@ -810,9 +813,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/environments/development.rb">
+    <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="33" selection-start="1048" selection-end="1048" vertical-scroll-proportion="0.71672356">
+        <state line="29" column="33" selection-start="1282" selection-end="1282" vertical-scroll-proportion="0.63993174">
           <folding />
         </state>
       </provider>
