@@ -25,4 +25,8 @@ BamburyLeinster::Application.configure do
 
   # Debug mode disables concatenation and preprocessing of assets.
   config.assets.debug = true
+
+  # TODO: fix for ckeditor assets
+  config.assets.compile = true
+
 end
