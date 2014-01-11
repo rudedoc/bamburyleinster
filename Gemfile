@@ -5,7 +5,7 @@ gem 'rails', '4.0.2'
 gem 'thin'
 gem 'pg'
 gem "monologue", git: "git://github.com/jipiboily/monologue.git"
-
+gem 'humanizer'
 group :development do
   gem 'quiet_assets'
 end

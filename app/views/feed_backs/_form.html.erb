@@ -1,0 +1,47 @@
+<%= form_for(@feed_back) do |f| %>
+    <% if @feed_back.errors.any? %>
+        <div id="error_explanation">
+          <h2><%= pluralize(@feed_back.errors.count, "error") %> prohibited this feed_back from being saved:</h2>
+
+          <ul>
+            <% @feed_back.errors.full_messages.each do |msg| %>
+                <li><%= msg %></li>
+            <% end %>
+          </ul>
+        </div>
+    <% end %>
+
+    <div class="field">
+      <%= f.label :email %>
+      <br>
+      <%= f.text_field :email %>
+    </div>
+    <div class="field">
+      <%= f.label :phone_number %>
+      <br>
+      <%= f.text_field :phone_number %>
+    </div>
+    <div class="field">
+      <%= f.label :call_back %>
+      <br>
+      <%= f.check_box :call_back %>
+    </div>
+    <div class="field">
+      <%= f.label :content %>
+      <br>
+      <%= f.text_area :content %>
+    </div>
+    <div class="field">
+      <%= f.label :slip_number %>
+      <br>
+      <%= f.text_field :slip_number %>
+    </div>
+
+    <%= f.label :humanizer_answer, @feed_back.humanizer_question %>
+    <%= f.text_field :humanizer_answer %>
+    <%= f.hidden_field :humanizer_question_id %>
+
+    <div class="actions">
+      <%= f.submit %>
+    </div>
+<% end %>

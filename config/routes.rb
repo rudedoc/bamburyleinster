@@ -1,4 +1,6 @@
 BamburyLeinster::Application.routes.draw do
+  resources :feed_backs
+
   resources :sign_ups
 
   get "shops/index"

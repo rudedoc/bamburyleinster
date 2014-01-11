@@ -11,10 +11,20 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131214201155) do
+ActiveRecord::Schema.define(version: 20131215212848) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "feed_backs", force: true do |t|
+    t.string   "email"
+    t.string   "phone_number"
+    t.boolean  "call_back"
+    t.text     "content"
+    t.string   "slip_number"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "monologue_posts", force: true do |t|
     t.boolean  "published"
